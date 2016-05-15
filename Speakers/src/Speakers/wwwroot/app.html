@@ -1,8 +1,8 @@
 ﻿<template>
+    <require from="./speakerList"></require>
 
-    <div repeat.for="speaker of speakers">
-        <span class="col-md-6">${speaker.Name}</span>
-        <span class="col-md-6">${speaker.Position}</span>
+    <div>
+        <speaker-list class="col-md-4"></speaker-list>        
     </div>
 
 </template>
