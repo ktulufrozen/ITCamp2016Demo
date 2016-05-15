@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNet.Mvc;
+using System.Linq;
 
 namespace Speakers.Controllers
 {
@@ -20,9 +21,9 @@ namespace Speakers.Controllers
         }
 
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Speaker Get(int id)
         {
-            return "value";
+            return speakerRepository.GetAllSpeakers().FirstOrDefault(s => s.Id == id);
         }
 
         [HttpPost]

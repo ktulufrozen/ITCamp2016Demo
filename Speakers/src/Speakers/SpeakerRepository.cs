@@ -10,6 +10,7 @@ namespace Speakers
             {
                 new Speaker
                 {
+                    Id = 1,
                     Name = "ADAM GRANICZ",
                     Position = "F# MVP",
                     Company = "INTELLIFACTORY",
@@ -18,6 +19,7 @@ namespace Speakers
 
                 new Speaker
                 {
+                    Id = 2,
                     Name = "CIPRIAN JICHICI",
                     Position = "Azure MVP, Microsoft RD",
                     Company = "GENISOFT",
@@ -26,6 +28,7 @@ namespace Speakers
 
                 new Speaker
                 {
+                    Id = 3,
                     Name = "ALEX MOLDOVAN",
                     Position = "Full Stack Developer",
                     Company = "FORTECH",

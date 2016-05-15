@@ -1,6 +1,9 @@
 <template>
+    
     <div repeat.for="speaker of speakers">
-        <span class="col-md-6">${speaker.Name}</span>
-        <span class="col-md-6">${speaker.Position}</span>
+        <a route-href="route: speakers; params.bind: {id:speaker.Id}"
+            <span>${speaker.Name}</span>
+        </a>
     </div>
+    
 </template>
