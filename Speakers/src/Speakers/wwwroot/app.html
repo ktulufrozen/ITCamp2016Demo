@@ -1,3 +1,8 @@
 ﻿<template>
-    <div>${message}</div>
+    
+    <div repeat.for="speaker of speakers">
+        <span>${speaker.Name}</span>
+        <span>${speaker.Position}</span>
+    </div>
+
 </template>
